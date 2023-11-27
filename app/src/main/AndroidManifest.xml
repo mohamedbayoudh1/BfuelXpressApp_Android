@@ -1,21 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.myloginapp">
-
+    package="com.example.mysignupapp">
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyLoginApp">
-        <activity android:name=".MainActivity">
+        android:theme="@style/Theme.MySignupApp">
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".base"
+            android:exported="false" />
+        <activity
+            android:name=".SignIN"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NewMainActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".MainItemActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Google"
+            android:label="Google" />
+        <activity
+            android:name=".MainActivity1"
+            android:exported="true"/>
 
+    </application>
 </manifest>

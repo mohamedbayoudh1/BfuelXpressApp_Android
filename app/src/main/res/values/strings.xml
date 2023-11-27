@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">MyLoginApp</string>
+    <string name="app_name">MySignupApp</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="type">Type</string>
+    <string name="user_name">User name</string>
+    <string name="user_email">User email</string>
+    <string name="user_country">User country</string>
+    <string name="delete">DELETE</string>
+    <string name="update">UPDATE</string>
+
 </resources>
